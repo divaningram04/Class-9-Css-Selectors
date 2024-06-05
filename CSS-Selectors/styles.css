@@ -1,0 +1,60 @@
+/* Basic Selectors */
+div {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.box {
+    color: blue;
+}
+
+#div3 {
+    font-size: 20px;
+}
+
+/* Advanced Selectors */
+ul > li {
+    color: green;
+}
+
+#div2 + #div3 {
+    background-color: yellow;
+}
+
+input[type="text"] {
+    border: 1px solid red;
+}
+
+/* Pseudo-class Selectors */
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    font-style: italic;
+}
+
+li:nth-child(even) {
+    background-color: lightgray;
+}
+
+li:nth-child(odd) {
+    background-color: lightblue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pseudo-element Selectors */
+p::first-line {
+    color: red;
+}
+
+#div1::before {
+    content: "Before Div 1 ";
+}
+
+::selection {
+    background-color: yellow;
+}
